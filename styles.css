@@ -1,0 +1,266 @@
+:root {
+
+    --bg-color: #fcfcfc;
+    --preto: #101828;
+    --cinza: #3A404E;
+    --cinza-medio: #667085;
+    --cinza-claro: #98A2B3;
+    --cinza-borda: #EAECF0;
+    --vermelho: #8E2424;
+    --fonte-principal: "Inter";
+
+}
+
+body {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--cinza-medio);
+    background-color: var(--bg-color);
+}
+
+/* Cabeçalho */
+
+.cabecalho {
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 2em;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2em 3em;
+    padding: 1em 2em;
+    border-bottom: 1px solid var(--cinza-claro);
+}
+
+.cabecalho__logo {
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho__img {
+    margin-right: 0.5em;
+}
+
+.cabecalho__titulo {
+    text-decoration: none;
+    color: var(--cinza);
+    font-size: 18px;
+}
+
+.cabecalho__lista {
+    display: flex;
+}
+
+.cabecalho__item {
+    margin: 0 1em;
+    text-decoration: none;
+    color: var(--cinza-medio);
+}
+
+.cabecalho__entrar {
+    color: var(--cinza-medio);
+    text-decoration: none;
+    margin-right: 2em;
+    margin-left: 10em;
+}
+
+.cabecalho__botao {
+    color: var(--bg-color);
+    text-decoration: none;
+    background-color: var(--vermelho);
+    border-radius: 5px;
+    padding: .75em 1.25em;
+}
+
+/* Banner */
+
+.banner {
+    margin: 5em auto 4em auto;
+    width: 65%;
+    text-align: center;
+    
+}
+
+.banner__titulo {
+    font-weight: 600;
+    color: var(--vermelho);
+}
+
+.banner__dif {
+    color: var(--preto);
+    font-size: 48px;
+    font-weight: 600;
+    margin: .6em 0;
+}
+
+.banner__texto {
+    font-size: 20px;
+    line-height: 1.3em;
+}
+
+/* Conquistas */
+
+.conquistas__lista {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 2em 3em 2em 4em;
+}
+
+.conquistas__item {
+    max-width: 23%;
+}
+
+.conquistas__numeros {
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--vermelho);
+}
+
+.conquistas__titulo {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--preto);
+    margin: .75em 0;
+}
+
+.conquistas__texto {
+    font-size: 14px;
+    line-height: 1.3em;
+}
+
+/* Vagas */
+
+.vagas {
+    margin: 5em auto 3.5em auto;
+    width: 65%;
+    text-align: center;
+}
+
+.vagas__titulo {
+    font-weight: 600;
+    color: var(--vermelho);
+    background-color: rgba(142, 36, 36, 5%);
+    margin: 10em auto 1em auto;
+    width: 16%;
+    padding: .5em;
+    border-radius: 15px;
+}
+
+.vagas__talentos {
+    color: var(--preto);
+    font-size: 36px;
+    font-weight: 600;
+    margin: .6em 0;
+}
+
+.vagas__texto {
+    font-size: 20px;
+    line-height: 1.3em;
+}
+
+.vagas__img {
+    width: 90vw;
+    position: relative;
+    left: 5%;
+    border-radius: 15px;
+}
+
+/* Salário */
+
+.salario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2em auto;
+}
+
+.salario__titulo h2 {
+    color: var(--preto);
+    font-weight: 500;
+    font-size: 20px;
+    margin: 2em 0 1.5em 0;
+}
+
+.salario__container {
+    border: 1.5px solid var(--cinza-borda);
+    border-radius: 10px;
+    padding: 1em 20em 1em 1em;
+    margin: 1.5em 0;
+}
+
+.salario__item {
+    margin: 1em 0;
+    padding: 0 1em;
+}
+
+.salario__vaga {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--preto);
+}
+
+.salario__texto {
+    display: inline-block;
+    margin-right: 2em;
+}
+
+/* Colaboradores */
+
+.colaboradores__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(142, 36, 36, 5%);
+    margin: 5em auto 1em auto;
+    width: 80%;
+    padding: 3em 2.5em 2em 2.5em;
+    border-radius: 10px;
+}
+
+.colaboradores__titulo {
+    color: var(--vermelho);
+    font-weight: 600;
+    font-size: 14px;
+    padding: 1em 0;
+}
+
+.colaboradores__depoimento {
+    font-weight: 500;
+    color: var(--preto);
+    font-size: 36px;
+    text-align: center;
+    line-height: 1.2em;
+    margin-bottom: .5em;
+}
+
+.colaboradores__foto {
+    margin-bottom: 1em;
+
+}
+
+.colaboradores__nome,
+.colaboradores__cargo {
+    margin-bottom: .75em;
+
+}
+
+.colaboradores__nome {
+    font-weight: 500;
+    color: var(--preto);
+
+}
+
+.colaboradores__cargo {
+    font-size: 14px;
+
+}
+
+/* Footer */
+
+.footer__texto {
+    color: var(--cinza-medio);
+    text-align: center;
+    margin: 2em 0 6em 0;
+}
